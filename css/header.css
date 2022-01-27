@@ -9,6 +9,7 @@ header {
 .menu-icon {
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 .menu-icon img {
     width: 100%;
@@ -19,6 +20,7 @@ header {
     font-weight: 800;
     margin: 0 0.875rem 0 auto;
     color: var(--primary-100);
+    cursor: pointer;
 }
 .logo img {
     width: 2.5rem;
@@ -44,12 +46,13 @@ header .btn {
         display: none;
     }
     .logo {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
     header {
         justify-content: space-around;
     }
     header .btn {
         margin: 0 0.875rem;
+        font-size: 1.3rem;
     }
 }
