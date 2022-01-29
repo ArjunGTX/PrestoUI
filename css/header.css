@@ -1,6 +1,7 @@
 header {
     padding: 1rem;
-    box-shadow: 0px 0px 10px 2px #e7e3e3;
+    box-shadow: var(--shadow-white);
+    height: 5rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -8,8 +9,8 @@ header {
     background-color: var(--bg-primary);
 }
 .menu-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
     cursor: pointer;
 }
 .menu-icon img {

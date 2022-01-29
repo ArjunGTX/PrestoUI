@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Docs</title>
+        <link rel="stylesheet" href="../css/resets.css" />
+        <link rel="stylesheet" href="../css/utility.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/docs.css" />
+        <script src="../scripts/nav.js" defer></script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <header class="flex-row col-center">
+            <img
+                src="../assets/icons/menu-open.svg"
+                alt="open menu"
+                class="menu-icon menu-open"
+            />
+            <div class="logo flex-row flex-center">
+                <a href="/index.html">
+                    <h1 class="logo-txt">PrestoUI</h1>
+                </a>
+            </div>
+            <a href="https://github.com/ArjunGTX/PrestoUI" target="_blank"
+                ><button class="btn btn-secondary">Github</button></a
+            >
+        </header>
+        <div class="container">
+            <nav class="flex-col">
+                <img
+                    src="../assets/icons/menu-close.svg"
+                    alt="menu close"
+                    class="menu-icon menu-close"
+                />
+                <a href="#documentation"><h3>Documentation</h3></a>
+                <ul>
+                    <li>
+                        <a href="#installation" class="nav-link"
+                            >Installation</a
+                        >
+                    </li>
+                </ul>
+                <a href="#components"><h3>Components</h3></a>
+                <ul>
+                    <li><a href="#alerts" class="nav-link">Alert</a></li>
+                    <li><a href="#avatars" class="nav-link">Avatar</a></li>
+                    <li><a href="#badges" class="nav-link">Badge</a></li>
+                    <li><a href="#buttons" class="nav-link">Button</a></li>
+                    <li><a href="#cards" class="nav-link">Card</a></li>
+                    <li><a href="#images" class="nav-link">Image</a></li>
+                    <li><a href="#inputs" class="nav-link">Input</a></li>
+                </ul>
+                <div class="icons-container">
+                    <a href="https://twitter.com/im_arjunvc" target="_blank">
+                        <img src="../assets/icons/twiter.svg" alt="twitter" />
+                    </a>
+                    <a href="https://github.com/ArjunGTX" target="_blank">
+                        <img src="../assets/icons/github.svg" alt="github" />
+                    </a>
+                    <a href="https://linkedin.com/in/arjunvc" target="_blank">
+                        <img
+                            src="../assets/icons/linkedin.svg"
+                            alt="linkedin"
+                        />
+                    </a>
+                </div>
+            </nav>
+
+            <main>
+                <h2 id="documentation">Documentation</h2>
+                <section>
+                    <h3 id="installation">Installation</h3>
+                    <p>
+                        Start off by linking the stylesheet to the project. Copy
+                        the following code on to your <b>HTML</b> file or use
+                        the import rule to import the styles to css file.
+                    </p>
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fprestoui.netlify.app%252Fcss%252Fcomponents%252Findex.css%2522%2520%252F%253E%250A%2520%2520"
+                            style="
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2540import%2520url%28%2522https%253A%252F%252Fopenui.netlify.app%252Fcss%252Fcomponents.css%2522%29%253B%250A%2520%2520"
+                            style="
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                    <p>
+                        Presto also provides support for integrating individual
+                        components. An example of linking Alert component is
+                        shown below. All the components can be linked similarly
+                        by changing the component name in the link.
+                    </p>
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fprestoui.netlify.app%252Fcss%252Fcomponents%252Falert.css%2522%2520%252F%253E%250A"
+                            style="
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </section>
+                <h2 id="components">Components</h2>
+                <section>
+                    <h3 id="alerts">Alert</h3>
+                </section>
+                <section>
+                    <h3 id="avatars">Avatar</h3>
+                </section>
+                <section>
+                    <h3 id="badges">Badge</h3>
+                </section>
+                <section>
+                    <h3 id="buttons">Button</h3>
+                </section>
+                <section>
+                    <h3 id="cards">Card</h3>
+                </section>
+                <section>
+                    <h3 id="images">Image</h3>
+                </section>
+                <section>
+                    <h3 id="inputs">Input</h3>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

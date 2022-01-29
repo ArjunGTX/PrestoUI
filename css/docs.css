@@ -1,0 +1,151 @@
+.container {
+    margin-top: 5rem;
+    height: 100vh;
+    display: flex;
+}
+nav {
+    width: 55vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: var(--bg-primary);
+    box-shadow: var(--shadow-white);
+    padding-left: 1.5rem;
+    transform: translateX(-100%);
+    transition: transform 300ms;
+    overflow-y: auto;
+}
+.nav-open {
+    transform: translateX(0);
+    pointer-events: all;
+}
+nav .menu-icon {
+    width: 1.8rem;
+    margin: 1.5rem 1.5rem 0.625rem auto;
+}
+nav h3 {
+    color: var(--font-70);
+    font-size: 1.15rem;
+}
+nav ul {
+    padding: 5px 1rem;
+}
+.nav-link {
+    color: var(--font-50);
+    display: inline-block;
+    padding: 0.5rem 0.625rem;
+    margin: 5px 0;
+    min-width: 7rem;
+    border-radius: 3px;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-hover);
+    transition: 300ms;
+    color: var(--primary-100);
+}
+.nav-link-active {
+    color: var(--primary-100);
+    font-weight: 800;
+}
+.blur-body {
+    pointer-events: none;
+    overflow-y: hidden;
+}
+main {
+    padding: 2rem;
+    flex: 1 1;
+    scroll-behavior: smooth;
+}
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+nav .icons-container {
+    margin-top: 1.5rem;
+}
+header .btn {
+    display: none;
+}
+section {
+    border-top: 3px solid var(--border-white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 4rem 0.625rem;
+    padding: 1.5rem;
+}
+section h3 {
+    position: absolute;
+    top: -1.3rem;
+    left: 2rem;
+    background-color: var(--bg-primary);
+    color: var(--font-90);
+    padding: 0 5px;
+    font-size: 1.6rem;
+}
+section p {
+    color: var(--font-70);
+    max-width: 85ch;
+}
+code {
+    max-width: 500px;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    header .btn {
+        display: block;
+    }
+    nav {
+        width: 250px;
+        transform: translateX(0%);
+        z-index: 0;
+        margin-top: 5rem;
+        padding: 3rem 1rem 1rem 3rem;
+        font-size: 1.2rem;
+        box-shadow: none;
+        border-right: 2px solid var(--border-white);
+    }
+    nav h3 {
+        font-size: 1.3rem;
+    }
+    main {
+        margin-left: 250px;
+    }
+    nav .icons-container img {
+        width: 1.8rem;
+    }
+    section h3 {
+        font-size: 1.8rem;
+        top: -1.4rem;
+    }
+    code {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    nav {
+        width: 350px;
+        padding: 3rem 1rem 1rem 5rem;
+    }
+    main {
+        margin-left: 350px;
+    }
+    nav .icons-container img {
+        width: 2.2rem;
+    }
+    section {
+        margin: 3rem;
+    }
+    section h3 {
+        font-size: 2rem;
+        top: -1.5rem;
+    }
+    code {
+        width: 70%;
+    }
+}
