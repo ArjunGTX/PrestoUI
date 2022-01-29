@@ -6,6 +6,8 @@
 }
 body {
     overflow-x: hidden;
+    pointer-events: all;
+    scroll-behavior: smooth;
 }
 body,
 h1,

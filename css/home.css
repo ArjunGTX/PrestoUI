@@ -13,6 +13,9 @@ main p {
     color: var(--font-50);
     max-width: 65ch;
 }
+main .btn {
+    margin: .5rem;
+}
 
 @media screen and (min-width: 640px) {
     main h2 {
@@ -29,7 +32,7 @@ main p {
     main p {
         font-size: 1.3rem;
     }
-    footer {
+    .footer-fixed {
         display: none !important;
     }
 }
