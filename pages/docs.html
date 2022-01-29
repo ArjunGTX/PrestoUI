@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Docs</title>
         <link rel="stylesheet" href="../css/resets.css" />
-        <link rel="stylesheet" href="../css/utility.css" />
+
         <link rel="stylesheet" href="../css/header.css" />
         <link rel="stylesheet" href="../css/docs.css" />
+        <link rel="stylesheet" href="../css/components/index.css" />
+
         <script src="../scripts/nav.js" defer></script>
     </head>
     <body>
@@ -95,7 +97,7 @@
 
                     <code>
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2540import%2520url%28%2522https%253A%252F%252Fopenui.netlify.app%252Fcss%252Fcomponents.css%2522%29%253B%250A%2520%2520"
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fopenui.netlify.app%252Fcss%252Fcomponents%252Findex.css%2522%29%253B%250A"
                             style="
                                 width: 100%;
                                 height: auto;
@@ -131,6 +133,65 @@
                 <h2 id="components">Components</h2>
                 <section>
                     <h3 id="alerts">Alert</h3>
+                    <p>
+                        Inform the user with contextual messages using Presto's
+                        <b>Alert</b> component.
+                    </p>
+                    <h4>Primary Alerts</h4>
+                    <div class="alert alert-success">
+                        This is a Primary Success Alert!
+                    </div>
+                    <div class="alert alert-error">
+                        This is a Primary Error Alert!
+                    </div>
+                    <div class="alert alert-warning">
+                        This is a Primary Warning Alert!
+                    </div>
+                    <div class="alert alert-info">
+                        This is a Primary Info Alert!
+                    </div>
+                    <h4>Secondary Alerts</h4>
+                    <div class="alert alert-success-sec">
+                        This is a Secondary Success Alert!
+                    </div>
+                    <div class="alert alert-error-sec">
+                        This is a Secondary Error Alert!
+                    </div>
+                    <div class="alert alert-warning-sec">
+                        This is a Secondary Warning Alert!
+                    </div>
+                    <div class="alert alert-info-sec">
+                        This is a Secondary Info Alert!
+                    </div>
+                    <h4>Example</h4>
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=521.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%2520This%2520is%2520a%2520Primary%2520Success%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%2520This%2520is%2520a%2520Primary%2520Error%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%2520This%2520is%2520a%2520Primary%2520Warning%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%2520This%2520is%2520a%2520Primary%2520Info%2520Alert%21%2520%253C%252Fdiv%253E%250A"
+                            style="
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=635.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=137%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success-sec%2522%253E%2520This%2520is%2520a%2520Secondary%2520Success%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-error-sec%2522%253E%2520This%2520is%2520a%2520Secondary%2520Error%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning-sec%2522%253E%2520This%2520is%2520a%2520Secondary%2520Warning%2520Alert%21%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info-sec%2522%253E%2520This%2520is%2520a%2520Secondary%2520Info%2520Alert%21%2520%253C%252Fdiv%253E%250A"
+                            style="
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
                 </section>
                 <section>
                     <h3 id="avatars">Avatar</h3>
