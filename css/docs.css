@@ -95,9 +95,25 @@ section h4 {
     color: var(--font-70);
 }
 code {
-    max-width: 500px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 15px;
     margin: 1.5rem auto;
     display: block;
+}
+code iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 684px) {
+    code {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -128,7 +144,7 @@ code {
         top: -1.4rem;
     }
     code {
-        width: 60%;
+        width: 320px;
     }
 }
 
@@ -152,5 +168,14 @@ code {
     }
     section p {
         font-size: 1.1em;
+    }
+    code {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    code {
+        width: 450px;
     }
 }
