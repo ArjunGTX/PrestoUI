@@ -4,7 +4,7 @@
     --primary-150: hsla(341, 73%, 35%, 1);
     --primary-100: hsla(341, 73%, 43%, 1);
     --primary-70: hsla(341, 70%, 60%, 1);
-    --primary-50: hsla(341, 60%, 70%, 1);
+    --primary-50: hsla(341, 80%, 75%, 0.7);
     --font-100: hsla(0, 0%, 0%, 1);
     --font-90: hsla(0, 0%, 20%, 1);
     --font-70: hsla(0, 0%, 25%, 1);
@@ -26,6 +26,7 @@
 
 .flex-row {
     display: flex;
+    flex-wrap: wrap;
 }
 .flex-col {
     display: flex;
@@ -35,15 +36,15 @@
     align-items: center;
     justify-content: center;
 }
+.flex-base {
+    justify-content: center;
+    align-items: baseline;
+}
 .row-center {
     justify-content: center;
 }
 .col-center {
     align-items: center;
-}
-.sq-40 {
-    width: 40px;
-    height: 40px;
 }
 .ml-auto {
     margin-left: auto;

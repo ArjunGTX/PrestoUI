@@ -88,11 +88,19 @@ section h3 {
 section p {
     color: var(--font-70);
     max-width: 85ch;
+    margin: 0.625rem 0;
 }
 section h4 {
     margin: 1rem 0.625rem 0.625rem 0.625rem;
     font-size: 1.2rem;
     color: var(--font-70);
+}
+section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+section .avatar {
+    margin: 1rem 1.5rem !important;
 }
 code {
     width: 100%;
