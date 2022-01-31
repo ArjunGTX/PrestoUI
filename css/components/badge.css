@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+
+.badge-container {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    margin: 1rem;
+}
+.badge {
+    position: absolute;
+    background-color: var(--primary-100);
+    color: var(--font-10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.badge-round {
+    border-radius: 50%;
+}
+.badge-square {
+    border-radius: 0.6em;
+    padding: 0.25em 0.4em;
+    font-size: 0.8em;
+    top: -1.4em;
+    right: -2.5em;
+}
+.badge-xl {
+    top: -0.7em;
+    right: -0.7em;
+    font-size: 0.85rem;
+    padding: 3px;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+}
+.badge-lg {
+    top: -0.5em;
+    right: -0.5em;
+    font-size: 0.8rem;
+    padding: 3px;
+    min-width: 1.4rem;
+    min-height: 1.4rem;
+}
+.badge-md {
+    top: -0.3em;
+    right: -0.3em;
+    font-size: 0.7rem;
+    padding: 2px;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+}
+.badge-sm {
+    top: -0.3em;
+    right: -0.3em;
+    font-size: 0.65rem;
+    padding: 1px;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+.badge-container .icon {
+    margin: 5px;
+}

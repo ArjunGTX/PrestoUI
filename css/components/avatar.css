@@ -5,12 +5,13 @@
     margin: 0.625rem;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
     cursor: pointer;
     position: relative;
 }
-.avatar-round {
+.avatar img {
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 .avatar-round-bd {
     border-radius: 50%;
@@ -20,12 +21,8 @@
 .avatar-round-bd img {
     border-radius: 50%;
 }
-.avatar-square {
+.avatar-square img {
     border-radius: 0.625rem;
-}
-.avatar img {
-    width: 100%;
-    height: 100%;
 }
 .avatar-xl {
     width: 4rem;

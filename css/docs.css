@@ -117,7 +117,22 @@ code iframe {
     transform: scale(1);
     overflow: hidden;
 }
-
+.badge-container .icon {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.badge-container {
+    margin: 1rem 1.5rem;
+}
+span.badge-container:nth-of-type(1) {
+    font-size: 1.2rem;
+}
+span.badge-container:nth-of-type(2) {
+    font-size: 1rem;
+}
+span.badge-container:nth-of-type(3) {
+    font-size: 0.8rem;
+}
 @media screen and (min-width: 684px) {
     code {
         width: 300px;
