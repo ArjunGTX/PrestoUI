@@ -159,6 +159,7 @@
                     <li>Small (1.8rem)</li>
                 </ul>
                 </p>
+                <p><span class="snippet">avatar</span> is the base class for all types of Avatar components. For more specific styles, use <span class="snippet">avatar-round</span>, <span class="snippet">avatar-round-bd</span>, and <span class="snippet">avatar-square</span> classes as shown in the examples below.</p>
                 <h4>Rounded Avatar</h4>
                 <div class="flex-row  flex-base ">
                     <div class="avatar avatar-round avatar-xl">
@@ -234,8 +235,9 @@
             <section>
                 <h3 id="badges">Badge</h3>
                 <p>A badge is a small numerical value or status descriptor for an element. Presto supports badges for
-                    Avatars and Icons. The badge component assumes that the direct parent has a position property set to
-                    <strong>relative</strong>.</p>
+                    Avatars and Icons.</p>
+                <p>The badge component must have a parent element whose <span class="snippet">position</span> property is set to <span class="snippet">relative</span> or just include Presto's <span class="snippet">badge-container</span> class to the parent element.</p>
+                <p>adding <span class="snippet">badge</span> class will set the general badge stylings to the element. To make use of pre-built badges, use <span class="snippet">badge-round</span> and <span class="snippet">badge-square</span> classes as shown below.</p>
                 <h4>Badge on Text</h4>
                 <div class="flex-col flex-center">
                     <span class="badge-container">Large Text<div class="badge badge-square">
@@ -315,6 +317,7 @@
                     </div>
                 </div>
                 <h4>Example</h4>
+                
 
                 <code>
                         <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge-container%2522%253EThis%2520is%2520a%2520Large%2520Text%253Cdiv%2520class%253D%2522badge%2520badge-square%2522%253ENew%253C%252Fdiv%253E%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge-container%2522%253EThis%2520is%2520a%2520Medium%2520sized%2520Text%253Cdiv%2520class%253D%2522badge%2520badge-square%2522%253ENew%253C%252Fdiv%253E%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge-container%2522%253EThis%2520is%2520a%2520small%2520Text%253Cdiv%2520class%253D%2522badge%2520badge-square%2522%253ENew%253C%252Fdiv%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
@@ -329,6 +332,7 @@
                         sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </code>
+                    <p>The examples shown below uses images as icons. Presto supports badges on icons from CDNs as well. Just provide the appropriate classes.</p>
                 <code>
                         <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252Fassets%252Ficons%252Fcart.svg%2522%2520alt%253D%2522cart%2522%2520class%253D%2522icon%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-round%2520badge-lg%2522%253E%253Cspan%253E9%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252Fassets%252Ficons%252Fmessage.svg%2522%2520alt%253D%2522message%2522%2520class%253D%2522icon%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-round%2520badge-lg%2522%253E%253Cspan%253E9%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252Fassets%252Ficons%252Fphone.svg%2522%2520alt%253D%2522phone%2522%2520class%253D%2522icon%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-round%2520badge-lg%2522%253E%253Cspan%253E9%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522..%252Fassets%252Ficons%252Fcalender.svg%2522%2520alt%253D%2522calender%2522%2520class%253D%2522icon%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-round%2520badge-lg%2522%253E%253Cspan%253E9%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"

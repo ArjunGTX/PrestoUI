@@ -90,6 +90,12 @@ section p {
     max-width: 85ch;
     margin: 0.625rem 0;
 }
+section p .snippet {
+    padding: 0 5px;
+    background-color: #e4e4e4;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
 section h4 {
     margin: 1rem 0.625rem 0.625rem 0.625rem;
     font-size: 1.2rem;
