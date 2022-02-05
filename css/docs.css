@@ -149,9 +149,17 @@ span.badge-container:nth-of-type(3) {
     background-color: var(--font-50);
     position: relative;
 }
+.image-container {
+    width: 9rem;
+    height: 9rem;
+}
 @media screen and (min-width: 684px) {
     code {
         width: 300px;
+    }
+    .image-container {
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -192,6 +200,10 @@ span.badge-container:nth-of-type(3) {
         background-color: var(--font-50);
         position: relative;
     }
+    .image-container {
+        width: 18rem;
+        height: 18rem;
+    }
 }
 
 @media screen and (min-width: 860px) {
@@ -218,10 +230,18 @@ span.badge-container:nth-of-type(3) {
     code {
         width: 350px;
     }
+    .image-container {
+        width: 21rem;
+        height: 21rem;
+    }
 }
 
 @media screen and (min-width: 940px) {
     code {
         width: 450px;
+    }
+    .image-container {
+        width: 26rem;
+        height: 26rem;
     }
 }
