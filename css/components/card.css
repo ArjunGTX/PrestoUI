@@ -10,7 +10,7 @@
     border-radius: 0.625rem;
     overflow: hidden;
     box-shadow: var(--shadow-white);
-    background-color: var();
+    background-color: var(--bg-primary);
     word-wrap: break-word;
     cursor: pointer;
     margin: 0.625rem;
@@ -27,7 +27,7 @@
     width: 1.8rem;
     height: 1.8rem;
     display: block;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     border-radius: 50%;
     padding: 5px;
     z-index: 10;
