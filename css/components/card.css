@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+@import url("./button.css");
+
+.card {
+    width: 11rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-white);
+    background-color: var();
+    word-wrap: break-word;
+    cursor: pointer;
+    margin: 0.625rem;
+    position: relative;
+    transition: box-shadow 150ms;
+}
+.card:hover {
+    box-shadow: 0 0 15px 5px #b6b6b6c2;
+}
+.icon-dismiss {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 10;
+}
+.card-cover {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-title-container {
+    width: 100%;
+    padding: 0.625rem;
+    padding-left: 0.8rem;
+}
+.card-title {
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+.card-subtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--font-50);
+}
+.card-price {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.card-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.625rem;
+}
+.card .btn-container {
+    margin: 0 0.625rem;
+    display: flex;
+}
+.card .btn {
+    min-width: fit-content;
+    padding: 4px 8px;
+    margin: 8px;
+}
+.card .icons-container {
+    display: flex;
+    margin: 0.625rem;
+    margin-left: auto;
+}
+.card .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.card .icon:hover {
+    background-color: var(--primary-hover);
+}
+.card-header .card-title-container {
+    order: -1;
+}
+.card-header .card-bottom {
+    padding: 1rem 0 0.625rem 0;
+}
+.text-overlay {
+    position: absolute;
+    z-index: 20;
+    color: var(--font-10);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    transition: 150ms;
+}
+.text-overlay:hover {
+    background-color: var(--primary-hover);
+}
+.text-overlay .card-subtitle {
+    color: var(--font-10);
+}
+.card-horizontal {
+    min-width: 90%;
+}
+@media screen and (min-width: 480px) {
+    .card {
+        width: 14rem;
+    }
+    .card-cover {
+        height: 12rem;
+    }
+    .card .icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .card-horizontal .card-cover {
+        height: 14rem;
+    }
+}
+
+@media screen and (min-width: 684px) {
+    .card {
+        width: 16rem;
+    }
+    .card-cover {
+        height: 14rem;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-subtitle {
+        font-size: 0.95rem;
+    }
+    .card .icon {
+        width: 2rem;
+        height: 2rem;
+        padding: 8px;
+    }
+    .card-horizontal .card-cover {
+        height: 18rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .card {
+        width: 18rem;
+    }
+    .card-cover {
+        height: 16rem;
+    }
+    .card .btn {
+        font-size: 0.9rem;
+    }
+    .card .icon-dismiss {
+        width: 2rem;
+        height: 2rem;
+    }
+    .card-horizontal .card-cover {
+        height: 22rem;
+    }
+    .card-horizontal .btn {
+        min-width: 8rem;
+    }
+    .card-horizontal .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
