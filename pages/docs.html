@@ -547,9 +547,48 @@
             </section>
             <section>
                 <h3 id="images">Image</h3>
+                <p>Making images responsive is now easy using Presto's <span class="snippet">image-res</span> class. Use <span class="snippet">image-round</span> class along with <span class="snippet">image-res</span> class to make a round responsive image as shown below.</p>
+                <h4>Responsive Image</h4>
+                <div class="flex-row flex-center">
+                    <div class="image-container">
+                        <img class="image-res" src="../assets/images/res-image.jpg" alt="product">
+                    </div>
+                </div>
+                <h4>Round Image</h4>
+                <div class="flex-row flex-center">
+                    <div class="image-container">
+                        <img class="image-res image-round" src="../assets/images/res-image.jpg" alt="product">
+                    </div>
+                </div>
+                <h4>Example</h4>
+                <code>
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522image-res%2522%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct.jpg%2522%2520alt%253D%2522product%2522%253E%250A%250A%253Cimg%2520class%253D%2522image-res%2520image-round%2522%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct.jpg%2522%2520alt%253D%2522product%2522%253E" 
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </code>
             </section>
             <section>
                 <h3 id="inputs">Input</h3>
+                <p>Inputs are primarily used to collect information from the user.</p>
+                <p><span class="snippet">input</span> is the base class for Presto's Input component. Use <span class="snippet">input-success</span>, <span class="snippet">input-warning</span>, and  <span class="snippet">input-error</span> for Customizing the Input field.</p>
+                <h4>Standard Input</h4>
+                <div class="flex-row flex-center">
+                    <input class="input" type="text" placeholder="Placeholder" required>
+                </div>
+                <h4>Validation Input</h4>
+                <div class="flex-col flex-center">
+                    <input type="text" class="input input-success" placeholder="Placeholder">
+                    <input type="text" class="input input-warning" placeholder="Placeholder">
+                    <input type="text" class="input input-error" placeholder="Placeholder">
+                </div> 
+                <h4>Example</h4>
+                <code>
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2522%2520placeholder%253D%2522Placeholder%2522%253E%250A%2520%2520%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520input-success%2522%2520placeholder%253D%2522Placeholder%2522%253E%250A%2520%2520%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520input-warning%2522%2520placeholder%253D%2522Placeholder%2522%253E%250A%2520%2520%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520input-error%2522%2520placeholder%253D%2522Placeholder%2522%253E"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe> 
+                </code>
             </section>
         </main>
     </div>

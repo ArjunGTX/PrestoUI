@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
 
 :root {
+    /* colors */
     --primary-150: hsla(341, 73%, 35%, 1);
     --primary-100: hsla(341, 73%, 43%, 1);
     --primary-70: hsla(341, 70%, 60%, 1);
@@ -26,6 +27,12 @@
     --primary-hover: hsla(341, 73%, 63%, 0.1);
     --border-white: #0f0f0f50;
     --shadow-white: 0px 0px 10px 2px #e7e3e3;
+
+    /* spacing */
+    --spacing-xl: 1.5rem;
+    --spacing-lg: 1rem;
+    --spacing-md: .625rem;
+    --spacing-sm: 5px;
 }
 
 .flex-row {
