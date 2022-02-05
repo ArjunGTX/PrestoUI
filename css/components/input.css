@@ -4,9 +4,9 @@
 .input {
     background-color: inherit;
     border: none;
-    padding: 0.625rem;
+    padding: var(--spacing-md);
     padding-bottom: 3px;
-    margin: 0.625rem;
+    margin: var(--spacing-md);
     font-size: 0.9rem;
     position: relative;
     border-bottom: 3px solid;
