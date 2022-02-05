@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/components/index.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/card.js" defer></script>
 </head>
 
 <body>
@@ -397,6 +398,152 @@
             </section>
             <section>
                 <h3 id="cards">Card</h3>
+                <p>Cards contain content and actions about a single subject. Presto provides a wide variety of Cards to act as a container for your content.</p>
+                <p><span class="snippet">card</span> is the base class for any card. Customizations can be made by changing the HTML structure and by adding <span class="snippet">card-overlay</span>, and <span class="snippet">card-horizontal</span> as shown below.</p>
+                <h4>Basic Card</h4>
+                <div class="flex-row flex-center">
+                    <div class="card">
+                        <div class="card-cover">
+                            <img src="../assets/images/product.jpg" alt="cover">
+                        </div>
+                        <div class="card-title-container">
+                            <h5 class="card-title">HyperX Cloud Alpha</h5>
+                            <p class="card-subtitle">Red, Black, On Ear</p>
+                            <span class="card-price">₹9,645</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="btn-container">
+                                <button class="btn btn-primary">Buy</button>
+                                <button class="btn btn-secondary">Cart</button>
+                            </div>
+                            <div class="icons-container">
+                                <img class="icon" src="../assets/icons/heart.svg" alt="heart">
+                                <img class="icon" src="../assets/icons/share.svg" alt="share">
+                                <img class="icon" src="../assets/icons/ellipsis.svg" alt="ellipsis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Text Only Card</h4>
+                <div class="flex-row flex-center">
+                    <div class="card card-header">
+                        <div class="card-title-container">
+                            <h5 class="card-title">HyperX Cloud Alpha</h5>
+                            <p class="card-subtitle">Click to view more</p>
+                        </div>  
+                    </div>
+                </div>
+                <h4>Dismissible Card</h4>
+                <div class="flex-row flex-center">
+                    <div class="card card-dismiss">
+                        <img class="icon-dismiss" src="../assets/icons/menu-close.svg" alt="">
+                        <div class="card-cover">
+                            <img src="../assets/images/product.jpg" alt="cover">
+                        </div>
+                        <div class="card-title-container">
+                            <h5 class="card-title">HyperX Cloud Alpha</h5>
+                            <p class="card-subtitle">Red, Black, On Ear</p>
+                            <span class="card-price">₹9,645</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="btn-container">
+                                <button class="btn btn-primary">Buy</button>
+                                <button class="btn btn-secondary">Cart</button>
+                            </div>
+                            <div class="icons-container">
+                                <img class="icon" src="../assets/icons/heart.svg" alt="heart">
+                                <img class="icon" src="../assets/icons/share.svg" alt="share">
+                                <img class="icon" src="../assets/icons/ellipsis.svg" alt="ellipsis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Card with Text Overlay</h4>
+                <div class="flex-row flex-center">
+                    <div class="card card-overlay">
+                        <div class="card-cover">
+                            <div class="text-overlay">
+                                <div class="card-title-container">
+                                    <h5 class="card-title">HyperX Cloud Alpha</h5>
+                                    <p class="card-subtitle">Red, Black, On Ear</p>
+                                    <span class="card-price">₹9,645</span>
+                                </div>
+                            </div>
+                            <img src="../assets/images/product.jpg" alt="cover">
+                        </div>
+                       
+                        <div class="card-bottom">
+                            <div class="btn-container">
+                                <button class="btn btn-primary">Buy</button>
+                                <button class="btn btn-secondary">Cart</button>
+                            </div>
+                            <div class="icons-container">
+                                <img class="icon" src="../assets/icons/heart.svg" alt="heart">
+                                <img class="icon" src="../assets/icons/share.svg" alt="share">
+                                <img class="icon" src="../assets/icons/ellipsis.svg" alt="ellipsis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Horizontal Card</h4>
+                <div class="flex-row flex-center">
+                    <div class="card card-horizontal">
+                        <div class="card-cover">
+                            <img src="../assets/images/product-horizontal.jpg" alt="cover">
+                        </div>
+                        <div class="card-title-container">
+                            <h5 class="card-title">HyperX Cloud Alpha</h5>
+                            <p class="card-subtitle">Red, Black, On Ear</p>
+                            <span class="card-price">₹9,645</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="btn-container">
+                                <button class="btn btn-primary">Buy</button>
+                                <button class="btn btn-secondary">Cart</button>
+                            </div>
+                            <div class="icons-container">
+                                <img class="icon" src="../assets/icons/heart.svg" alt="heart">
+                                <img class="icon" src="../assets/icons/share.svg" alt="share">
+                                <img class="icon" src="../assets/icons/ellipsis.svg" alt="ellipsis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Example</h4>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-cover%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct.jpg%2522%2520alt%253D%2522cover%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-title-container%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-title%2522%253EHyperX%2520Cloud%2520Alpha%253C%252Fh5%253E%250A%2509%2509%2520%253Cp%2520class%253D%2522card-subtitle%2522%253ERed%252C%2520Black%252C%2520On%2520Ear%253C%252Fp%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522card-price%2522%253E%25E2%2582%25B99%252C645%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-bottom%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%253C%252Fbutton%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECart%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522icons-container%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fheart.svg%2522%2520alt%253D%2522heart%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fshare.svg%2522%2520alt%253D%2522share%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fellipsis.svg%2522%2520alt%253D%2522ellipsis%2522%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-header%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-title-container%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-title%2522%253EHyperX%2520Cloud%2520Alpha%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-subtitle%2522%253EClick%2520to%2520view%2520more%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%2520%2520%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+  
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-dismiss%2522%253E%250A%2520%2509%253Cimg%2520class%253D%2522icon-dismiss%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fmenu-close.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cover%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct.jpg%2522%2520alt%253D%2522cover%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253EHyperX%2520Cloud%2520Alpha%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253ERed%252C%2520Black%252C%2520On%2520Ear%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253E%25E2%2582%25B99%252C645%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-bottom%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fheart.svg%2522%2520alt%253D%2522heart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fshare.svg%2522%2520alt%253D%2522share%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fellipsis.svg%2522%2520alt%253D%2522ellipsis%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-overlay%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-cover%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522text-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-title-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ch5%2520class%253D%2522card-title%2522%253EHyperX%2520Cloud%2520Alpha%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253ERed%252C%2520Black%252C%2520On%2520Ear%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253E%25E2%2582%25B99%252C645%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct.jpg%2522%2520alt%253D%2522cover%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-bottom%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fheart.svg%2522%2520alt%253D%2522heart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fshare.svg%2522%2520alt%253D%2522share%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fellipsis.svg%2522%2520alt%253D%2522ellipsis%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+ 
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-cover%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fproduct-horizontal.jpg%2522%2520alt%253D%2522cover%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title-container%2522%253E%250A%2520%2520%2520%2520%2509%253Ch5%2520class%253D%2522card-title%2522%253EHyperX%2520Cloud%2520Alpha%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253ERed%252C%2520Black%252C%2520On%2520Ear%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253E%25E2%2582%25B99%252C645%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-bottom%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fheart.svg%2522%2520alt%253D%2522heart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fshare.svg%2522%2520alt%253D%2522share%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522..%252Fassets%252Ficons%252Fellipsis.svg%2522%2520alt%253D%2522ellipsis%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+  
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
             </section>
             <section>
                 <h3 id="images">Image</h3>
