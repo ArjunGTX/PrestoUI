@@ -153,6 +153,57 @@ span.badge-container:nth-of-type(3) {
     width: 9rem;
     height: 9rem;
 }
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+    width: 90%;
+    min-height: 8rem;
+    box-shadow: var(--shadow-white);
+}
+.color-palette .primary-dark {
+    background-color: var(--primary-150);
+}
+.color-palette .primary {
+    background-color: var(--primary-100);
+}
+.color-palette .primary-light {
+    background-color: var(--primary-70);
+}
+.color-palette .primary-hover {
+    background-color: var(--primary-hover);
+}
+.color-palette .font-dark {
+    background-color: var(--font-100);
+    color: var(--font-10);
+}
+.color-palette .font-semi-dark {
+    background-color: var(--font-70);
+    color: var(--font-10);
+}
+.color-palette .font-gray {
+    background-color: var(--font-50);
+    color: var(--font-10);
+}
+.color-palette .font-white {
+    background-color: var(--font-10);
+}
+.color-palette .success {
+    background-color: var(--bg-success);
+}
+.color-palette .warning {
+    background-color: var(--bg-warning);
+}
+.color-palette .error {
+    background-color: var(--bg-error);
+}
+.color-palette .info {
+    background-color: var(--bg-info);
+}
+section .hyper-link {
+    color: var(--font-90);
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 684px) {
     code {
         width: 300px;
