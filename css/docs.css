@@ -203,7 +203,8 @@ section .hyper-link {
     color: var(--font-90);
     text-decoration: underline;
 }
-.snackbar-container {
+.snackbar-container,
+.modal-container {
     width: 90%;
     height: 15rem;
     margin: var(--spacing-lg);
