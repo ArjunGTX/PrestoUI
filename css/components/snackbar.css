@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+@import url("./button.css");
+
+.snackbar {
+    max-width: 70%;
+    max-height: 5rem;
+    border-radius: 5px;
+    padding: var(--spacing-md);
+    background-color: var(--font-90);
+    color: var(--font-10);
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    overflow-y: auto;
+    position: absolute;
+    transition: 300ms;
+}
+.snackbar-lead {
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+}
+.snackbar-center {
+    bottom: var(--spacing-md);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.snackbar .btn {
+    margin: var(--spacing-sm);
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+.hide-snackbar-lead {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.show-snackbar-lead {
+    transform: translateX(0);
+    opacity: 1;
+}
+.hide-snackbar-center {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+}
+.show-snackbar-center {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+@media screen and (min-width: 760px) {
+    .snackbar {
+        max-width: 18rem;
+    }
+}
+@media screen and (min-width: 890px) {
+    .snackbar {
+        max-width: 25rem;
+    }
+}

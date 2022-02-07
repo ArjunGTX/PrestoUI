@@ -203,7 +203,14 @@ section .hyper-link {
     color: var(--font-90);
     text-decoration: underline;
 }
-
+.snackbar-container {
+    width: 90%;
+    height: 15rem;
+    margin: var(--spacing-lg);
+    border: 2px solid var(--font-50);
+    overflow: hidden;
+    position: relative;
+}
 @media screen and (min-width: 684px) {
     code {
         width: 300px;
