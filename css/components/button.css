@@ -6,7 +6,7 @@
     font-size: 0.8rem;
     font-weight: 700;
     cursor: pointer;
-    transition: 400ms;
+    transition: 300ms;
     background-color: inherit;
     padding: 0.375rem 0.875rem;
     border-radius: 3px;
@@ -19,7 +19,7 @@
     border: 2px solid var(--primary-100);
     color: var(--font-10);
 }
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover {
     background-color: var(--primary-150);
 }
 .btn-secondary {
@@ -30,7 +30,7 @@
     border: 2px solid var(--primary-100);
     color: var(--primary-100);
 }
-.btn-secondary:hover, .btn-secondary:focus {
+.btn-secondary:hover {
     background-color: var(--primary-100);
     color: var(--font-10);
 }
@@ -38,7 +38,7 @@
     font-size: 1rem;
     color: var(--primary-100);
 }
-.btn-link:hover, .btn-link:focus {
+.btn-link:hover {
     background-color: var(--primary-hover);
 }
 .btn-icon {
@@ -46,41 +46,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-100);
-    color: var(--font-10);
-    min-width: 2.5rem;
-    min-height: 2.5rem;
-    border-radius: 1rem;
+    color: var(--font-100);
+    padding: .5rem;
+    border-radius: 50%;
 }
-.btn-icon:hover, .btn-icon:focus {
-    background-color: var(--primary-150);
+.btn-icon img, .btn-icon i {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn-icon:hover {
+    background-color: var(--primary-hover);
 }
 .btn-success {
     background-color: var(--bg-success);
     color: var(--font-success);
 }
-.btn-success:hover, .btn-success:focus {
+.btn-success:hover {
     background-color: var(--bg-success-hover);
 }
 .btn-warning {
     background-color: var(--bg-warning);
     color: var(--font-warning);
 }
-.btn-warning:hover, .btn-warning:focus {
+.btn-warning:hover {
     background-color: var(--bg-warning-hover);
 }
 .btn-error {
     background-color: var(--bg-error);
     color: var(--font-error);
 }
-.btn-error:hover, .btn-error:focus {
+.btn-error:hover {
     background-color: var(--bg-error-hover);
 }
 .btn-info {
     background-color: var(--bg-info);
     color: var(--font-info);
 }
-.btn-info:hover, .btn-info:focus {
+.btn-info:hover {
     background-color: var(--bg-info-hover);
 }
 .btn-float {
@@ -90,7 +92,7 @@
     bottom: 5px;
     right: 5px;
 }
-.btn-float:hover, .btn-float:focus {
+.btn-float:hover {
     background-color: var(--primary-150);
 }
 
