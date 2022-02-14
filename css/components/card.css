@@ -103,6 +103,16 @@
     padding: 4px 8px;
     margin: 8px;
 }
+.card-badge .badge {
+    top: 0;
+    left: 0;
+    right: auto;
+    z-index: 2;
+    padding: 5px 8px;
+}
+.open-card {
+    display: none;
+}
 .card-header .card-title-container {
     order: -1;
 }
