@@ -59,6 +59,7 @@
                 <li><a href="#rating" class="nav-link">Rating</a></li>
                 <li><a href="#modal" class="nav-link">Modal</a></li>
                 <li><a href="#navigation" class="nav-link">Navigation</a></li>
+                <li><a href="#text-utilities" class="nav-link">Text Utilities</a></li>
             </ul>
             <div class="icons-container">
                 <a href="https://twitter.com/im_arjunvc" target="_blank">
@@ -793,8 +794,55 @@
                     </iframe>
                 </code>
             </section>
+            <section>
+                <h3 class="section-head" id="text-utilities">Text Utilities</h3>
+                <p>Develop your WebApps faster and make the content look consistent throughout with Presto's Text utility classes.</p>
+                <h4>Headings</h4>
+                <p>Add <span class="snippet">h1</span>,
+                    <span class="snippet">h2</span>,
+                    <span class="snippet">h3</span>,
+                    <span class="snippet">h4</span>,
+                    <span class="snippet">h5</span>, and
+                    <span class="snippet">h6</span> classes to make use of the availabe heading styles.
+                </p>
+                <div class="flex-col flex-center">
+                    <span class="h1 my-md">This is an H1 Heading</span>
+                    <span class="h2 my-md">This is an H2 Heading</span>
+                    <span class="h3 my-md">This is an H3 Heading</span>
+                    <span class="h4 my-md">This is an H4 Heading</span>
+                    <span class="h5 my-md">This is an H5 Heading</span>
+                    <span class="h6 my-md">This is an H6 Heading</span>
+                </div>
+                <h4>Text Sizes</h4>
+                <p>For different text sizes use <span class="snippet">txt-xs</span>, <span class="snippet">txt-sm</span>, <span class="snippet">txt-md</span>, <span class="snippet">txt-lg</span>, and <span class="snippet">txt-xl</span> classes.</p>
+                <div class="flex-col flex-center">
+                    <span class="my-md txt-xl">Extra Large Text</span>
+                    <span class="my-md txt-lg">Large Text</span>
+                    <span class="my-md txt-md">Medium sized Text</span>
+                    <span class="my-md txt-sm">Small Text</span>
+                    <span class="my-md txt-xs">Extra small Text</span>
+                </div>
+                <h4>Decorated Text</h4>
+                <p>Use <span class="snippet">txt-underline</span>, <span class="snippet">txt-strikethrough</span>, <span class="snippet">txt-overline</span>, <span class="snippet">txt-highlight</span>, and <span class="snippet">txt-grey</span> classes to apply text decorations.</p>
+                <div class="flex-row flex-center">
+                    <span class="mx-md my-md txt-underline">Underline</span> 
+                    <span class="mx-md my-md txt-overline">Overline</span>
+                    <span class="mx-md my-md txt-strikethrough">Strikethrough</span>
+                    <span class="mx-md my-md txt-highlight">Highlight</span>
+                    <span class="mx-md my-md txt-grey">Grey text</span>
+                </div>
+                <h4>Centered Text</h4>
+                <p>Apply the <span class="snippet">txt-center</span> class to align a text to the center of it's container.</p>
+                <span class="my-md txt-center">This text is centered</span>
+                <h4>Example</h4>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=320&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522h1%2522%253EThis%2520is%2520an%2520H1%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h2%2522%253EThis%2520is%2520an%2520H2%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h3%2522%253EThis%2520is%2520an%2520H3%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h4%2522%253EThis%2520is%2520an%2520H4%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h5%2522%253EThis%2520is%2520an%2520H5%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h6%2522%253EThis%2520is%2520an%2520H6%2520Heading%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522%2520txt-xl%2522%253EExtra%2520Large%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-lg%2522%253ELarge%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-md%2522%253EMedium%2520sized%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-sm%2522%253ESmall%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-xs%2522%253EExtra%2520small%2520Text%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522txt-underline%2522%253EUnderline%253C%252Fspan%253E%2520%250A%253Cspan%2520class%253D%2522txt-overline%2522%253EOverline%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-strikethrough%2522%253EStrikethrough%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-highlight%2522%253EHighlight%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-grey%2522%253EGrey%2520text%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522txt-center%2522%253EThis%2520text%2520is%2520centered%253C%252Fspan%253E%250A"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+            </section>
         </main>
     </div>
 </body>
-
 </html>

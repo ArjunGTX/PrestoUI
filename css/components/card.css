@@ -147,6 +147,7 @@
 .card-horizontal .btn-icon {
     left: 0;
     top: 0;
+    right: auto;
 }
 .card-horizontal .card-content {
     width: 50%;

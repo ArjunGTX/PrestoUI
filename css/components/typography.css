@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+
+.h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.txt-xl {
+    font-size: 1.6rem;
+}
+.txt-lg {
+    font-size: 1.4rem;
+}
+.txt-md {
+    font-size: 1.2rem;
+}
+.txt-sm {
+    font-size: 1rem;
+}
+.txt-xs {
+    font-size: 0.8rem;
+}
+.txt-underline {
+    text-decoration: underline;
+}
+.txt-overline {
+    text-decoration: overline;
+}
+.txt-strikethrough {
+    text-decoration: line-through;
+}
+.txt-highlight {
+    padding: 0 5px;
+    background-color: #e4e4e4;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+}
+.txt-grey {
+    color: var(--font-50);
+}
+.txt-center {
+    text-align: center;
+}
