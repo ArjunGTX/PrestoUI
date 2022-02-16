@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+@import url("./input.css");
+@import url("./button.css");
+
+.nav {
+    width: 100%;
+    height: 60px;
+    box-shadow: var(--shadow-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo {
+    font-size: 1.3rem;
+}
+.nav .search {
+    display: none;
+}
+.nav .btn-icon img {
+    margin: 0;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+@media screen and (min-width: 840px) {
+    .nav .search {
+        display: block;
+        position: relative;
+    }
+    .open-menu {
+        display: none;
+    }
+    .search img {
+        position: absolute;
+        width: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+        cursor: pointer;
+    }
+}

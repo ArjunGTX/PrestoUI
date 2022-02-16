@@ -100,7 +100,7 @@ section p .snippet {
     font-family: "Courier New", Courier, monospace;
 }
 section h4 {
-    margin: 1rem 0.625rem 0.625rem 0.625rem;
+    margin: 1rem 0.625rem 0.625rem 0;
     font-size: 1.2rem;
     color: var(--font-70);
 }
@@ -225,6 +225,14 @@ section .hyper-link {
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--primary-70) var(--bg-primary);
+}
+.my-md {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+.mx-md {
+    margin-left: var(--spacing-md);
+    margin-right: var(--spacing-md);
 }
 @media screen and (min-width: 684px) {
     code {
