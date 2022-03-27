@@ -111,6 +111,15 @@ section ul {
 section .avatar {
     margin: 1rem 1.5rem !important;
 }
+section .grid {
+    height: 5rem;
+    border: 1px solid var(--font-100);
+    background-color: var(--primary-70);
+}
+section .grid > div {
+    border: 1px solid var(--font-100);
+    text-align: center;
+} 
 code {
     width: 100%;
     height: 100px;

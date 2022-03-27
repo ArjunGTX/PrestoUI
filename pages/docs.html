@@ -60,6 +60,7 @@
                 <li><a href="#modal" class="nav-link">Modal</a></li>
                 <li><a href="#navigation" class="nav-link">Navigation</a></li>
                 <li><a href="#text-utilities" class="nav-link">Text Utilities</a></li>
+                <li><a href="#grid" class="nav-link">Grid</a></li>
             </ul>
             <div class="icons-container">
                 <a href="https://twitter.com/im_arjunvc" target="_blank">
@@ -838,6 +839,25 @@
                 <code>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=320&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522h1%2522%253EThis%2520is%2520an%2520H1%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h2%2522%253EThis%2520is%2520an%2520H2%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h3%2522%253EThis%2520is%2520an%2520H3%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h4%2522%253EThis%2520is%2520an%2520H4%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h5%2522%253EThis%2520is%2520an%2520H5%2520Heading%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522h6%2522%253EThis%2520is%2520an%2520H6%2520Heading%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522%2520txt-xl%2522%253EExtra%2520Large%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-lg%2522%253ELarge%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-md%2522%253EMedium%2520sized%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-sm%2522%253ESmall%2520Text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-xs%2522%253EExtra%2520small%2520Text%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522txt-underline%2522%253EUnderline%253C%252Fspan%253E%2520%250A%253Cspan%2520class%253D%2522txt-overline%2522%253EOverline%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-strikethrough%2522%253EStrikethrough%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-highlight%2522%253EHighlight%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522txt-grey%2522%253EGrey%2520text%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522txt-center%2522%253EThis%2520text%2520is%2520centered%253C%252Fspan%253E%250A"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+            </section>
+            <section>
+                <h3 class="section-head" id="grid">Grid</h3>
+                <p>Making your site Responsive is a peice of cake with Presto's grid system.</p>
+                <p>Use the <span class="snippet">grid</span> class on the container element and use <span class="snippet">grid-col-{number}</span> class on the children to split the available width accordingly where <span class="snippet">number</span> varies from <span class="snippet">1</span> to <span class="snippet">12</span>.</p>
+                <div class="flex-row flex-center">
+                    <div class="grid">
+                        <div class="grid-col-2 flex-row flex-center">2 Column</div>
+                        <div class="grid-col-4 flex-row flex-center">4 Column</div>
+                        <div class="grid-col-6 flex-row flex-center">6 Column</div>
+                    </div>
+                </div>
+                <h4>Example</h4>
+                <code>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=sharp&l=auto&width=320&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=2px&ph=2px&ln=false&fl=1&fm=Hack&fs=10.5px&lh=127%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2522%253E%250A%2509%253Cdiv%2520class%253D%2522grid-col-2%2522%253E2%2520Column%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522grid-col-4%2522%253E4%2520Column%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-col-6%2522%253E6%2520Column%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </code>
