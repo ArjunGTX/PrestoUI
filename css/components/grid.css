@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.grid-col-1 {
+  flex: 0 0 calc(1 / 12 * 100%);
+}
+.grid-col-2 {
+  flex: 0 0 calc(2 / 12 * 100%);
+}
+.grid-col-3 {
+  flex: 0 0 calc(3 / 12 * 100%);
+}
+.grid-col-4 {
+  flex: 0 0 calc(4 / 12 * 100%);
+}
+.grid-col-5 {
+  flex: 0 0 calc(5 / 12 * 100%);
+}
+.grid-col-6 {
+  flex: 0 0 calc(6 / 12 * 100%);
+}
+.grid-col-7 {
+  flex: 0 0 calc(7 / 12 * 100%);
+}
+.grid-col-8 {
+  flex: 0 0 calc(8 / 12 * 100%);
+}
+.grid-col-9 {
+  flex: 0 0 calc(9 / 12 * 100%);
+}
+.grid-col-10 {
+  flex: 0 0 calc(10 / 12 * 100%);
+}
+.grid-col-11 {
+  flex: 0 0 calc(11 / 12 * 100%);
+}
+.grid-col-12 {
+  flex: 0 0 calc(12 / 12 * 100%);
+}
