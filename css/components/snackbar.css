@@ -13,8 +13,9 @@
     align-items: center;
     font-size: 0.9rem;
     overflow-y: auto;
-    position: absolute;
+    position: fixed;
     transition: 300ms;
+    z-index: 500;
 }
 .snackbar-lead {
     bottom: var(--spacing-md);
