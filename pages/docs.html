@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docs</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png">
     <link rel="stylesheet" href="../css/resets.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/docs.css" />
@@ -22,7 +23,8 @@
     <header class="flex-row col-center">
         <img src="../assets/icons/menu-open.svg" alt="open menu" class="menu-icon menu-open" />
         <div class="logo flex-row flex-center">
-            <a href="/index.html">
+            <a href="/index.html" class="flex-row">
+                <img src="../assets/images/logo.png" alt="logo">
                 <h1 class="logo-txt">PrestoUI</h1>
             </a>
         </div>
@@ -76,6 +78,7 @@
         </nav>
 
         <main>
+           <a href="#installation" class="btn-top">Top</a>
             <h2 id="getting-started">Getting Started</h2>
             <section>
                 <h3 class="section-head" id="installation">Installation</h3>
@@ -690,21 +693,17 @@
                 <h4>Leading Snackbar</h4>
                 <div class="flex-col flex-center">
                     <button class="btn btn-secondary btn-lead-open">Open Leading Snackbar</button>
-                    <div class="snackbar-container">
-                        <div class="snackbar snackbar-lead">
-                            <span>This a Leading Snackbar</span>
-                            <button class="btn btn-link btn-lead-close">ACTION</button>
-                        </div>
+                    <div class="snackbar snackbar-lead hide-snackbar-lead">
+                        <span>This a Leading Snackbar</span>
+                        <button class="btn btn-link btn-lead-close">ACTION</button>
                     </div>
                 </div>
                 <h4>Centered Snackbar</h4>
                 <div class="flex-col flex-center">
                     <button class="btn btn-secondary btn-center-open">Open Centered Snackbar</button>
-                    <div class="snackbar-container">
-                        <div class="snackbar snackbar-center">
-                            <span>This a Centered Snackbar</span>
-                            <button class="btn btn-link btn-center-close">ACTION</button>
-                        </div>
+                    <div class="snackbar snackbar-center hide-snackbar-center">
+                        <span>This a Centered Snackbar</span>
+                        <button class="btn btn-link btn-center-close">ACTION</button>
                     </div>
                 </div>
                 <h4>Example</h4>
@@ -743,15 +742,13 @@
                 <p>Note: The modal component assumes that the parent has it's <span class="snippet">position</span> property is set to <span class="snippet">relative</span>.</p>
                 <div class="flex-col flex-center">
                     <button class="btn btn-secondary btn-open-modal">Open Modal</button>
-                    <div class="modal-container">
-                        <div class="modal">
-                            <img class="btn-close-modal" src="../assets/icons/menu-close.svg" alt="close">
-                            <h5>Modal Title</h5>
-                            <p>Modal body goes here.</p>
-                            <div class="btn-container">
-                                <button class="btn btn-primary btn-close-modal">Save</button>
-                                <button class="btn btn-secondary btn-close-modal">Close</button>
-                            </div>
+                    <div class="modal close-modal">
+                        <img class="btn-close-modal" src="../assets/icons/menu-close.svg" alt="close">
+                        <h5>Modal Title</h5>
+                        <p>Modal body goes here.</p>
+                        <div class="btn-container">
+                            <button class="btn btn-primary btn-close-modal">Save</button>
+                            <button class="btn btn-secondary btn-close-modal">Close</button>
                         </div>
                     </div>
                 </div>
