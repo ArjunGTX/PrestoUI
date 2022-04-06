@@ -3,19 +3,20 @@
 @import url("./button.css");
 
 .modal {
-    max-width: 70%;
+    width: clamp(20rem, 25rem, 70%);
     max-height: 12rem;
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-white);
     background-color: var(--bg-primary);
-    position: relative;
-    top: 1rem;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 5px;
     overflow-y: auto;
     transition: 250ms;
+    z-index: 500;
 }
 .modal img,
 .modal i {
@@ -40,10 +41,10 @@
     min-width: fit-content;
 }
 .open-modal {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 .close-modal {
-    transform: translateX(-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
 }
 
 @media screen and (min-width: 780px) {
