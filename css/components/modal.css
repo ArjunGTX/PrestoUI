@@ -18,17 +18,10 @@
     transition: 250ms;
     z-index: 500;
 }
-.modal img,
-.modal i {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 1.2rem;
-    cursor: pointer;
-}
 .modal h5 {
     margin: var(--spacing-md);
     font-size: 1.3rem;
+    color: var(--font-100);
 }
 .modal p {
     margin: var(--spacing-md);
@@ -50,10 +43,6 @@
 @media screen and (min-width: 780px) {
     .modal {
         max-width: 14rem;
-    }
-    .modal img,
-    .modal i {
-        width: 1.5rem;
     }
 }
 @media screen and (min-width: 890px) {

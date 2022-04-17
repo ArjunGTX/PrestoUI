@@ -1,0 +1,39 @@
+:root {
+    --docs-primary-150: hsla(341, 73%, 35%, 1);
+    --docs-primary-100: hsla(341, 73%, 43%, 1);
+    --docs-primary-70: hsla(341, 70%, 60%, 1);
+    --docs-primary-50: hsla(341, 80%, 75%, 0.7);
+    --docs-font-100: hsla(0, 0%, 0%, 1);
+    --docs-font-90: hsla(0, 0%, 20%, 1);
+    --docs-font-70: hsla(0, 0%, 25%, 1);
+    --docs-font-50: hsla(0, 0%, 30%, 1);
+    --docs-font-10: hsla(100, 90%, 100%, 1);
+    --bg-docs-primary: #fff;
+    --docs-primary-hover: rgba(210, 210, 210, 0.208);
+    --docs-shadow-white: 0px 0px 10px 2px #e7e3e3;
+  }
+  .dark-mode {
+    --docs-primary-150: hsl(40, 97%, 64%);
+    --docs-primary-100: hsl(40, 100%, 67%);
+    --docs-primary-70: hsl(40, 96%, 72%);
+    --docs-primary-50: hsl(40, 100%, 75%);
+    --docs-font-10: hsl(0, 0%, 16%);
+    --docs-font-50: hsl(0, 0%, 28%);
+    --docs-font-70: hsl(0, 0%, 76%);
+    --docs-font-90: hsl(0, 5%, 96%);
+    --docs-font-100: hsla(100, 90%, 100%, 1);
+    --bg-docs-primary: hsl(201, 100%, 14%);
+    --docs-primary-hover: hsla(40, 100%, 75%, 0.2);
+    --docs-shadow-white: 0px 0px 10px 2px #38383876;
+  }
+  * {
+    transition: background-color 350ms, color 350ms;
+  }
+  body {
+    background-color: var(--bg-docs-primary);
+    color: var(--docs-font-100);
+  }
+  header {
+    background-color: var(--bg-docs-primary);
+    box-shadow: var(--docs-shadow-white);
+  }

@@ -13,14 +13,10 @@ header {
     height: 2.25rem;
     cursor: pointer;
 }
-.menu-icon img {
-    width: 100%;
-    height: 100%;
-}
 .logo {
     font-weight: 800;
     margin: 0 0.875rem 0 auto;
-    color: var(--primary-100);
+    color: var(--docs-primary-100);
     cursor: pointer;
 }
 .logo-txt {

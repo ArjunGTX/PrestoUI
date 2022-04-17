@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/docs.css" />
     <link rel="stylesheet" href="../css/components/index.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/darkmode.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="../scripts/nav.js" defer></script>
     <script src="../scripts/card.js" defer></script>
     <script src="../scripts/snackbar.js" defer></script>
@@ -19,9 +20,9 @@
     <script src="../scripts/modal.js" defer></script>
 </head>
 
-<body>
+<body class="dark-ode">
     <header class="flex-row col-center">
-        <img src="../assets/icons/menu-open.svg" alt="open menu" class="menu-icon menu-open" />
+        <i data-feather="menu" class="menu-icon menu-open"></i>
         <div class="logo flex-row flex-center">
             <a href="/index.html" class="flex-row">
                 <img src="../assets/images/logo.png" alt="logo">
@@ -31,7 +32,7 @@
     </header>
     <div class="container">
         <nav class="flex-col">
-            <img src="../assets/icons/menu-close.svg" alt="menu close" class="menu-icon menu-close" />
+            <button class="menu-icon menu-close"><i data-feather="x" ></i></button>
             <a href="#getting-started">
                 <h3>Getting Started</h3>
             </a>
@@ -67,13 +68,13 @@
             </ul>
             <div class="icons-container">
                 <a href="https://twitter.com/im_arjunvc" target="_blank">
-                    <img src="../assets/icons/twiter.svg" alt="twitter" />
+                    <i data-feather="twitter"></i>
                 </a>
                 <a href="https://github.com/ArjunGTX" target="_blank">
-                    <img src="../assets/icons/github.svg" alt="github" />
+                    <i data-feather="github"></i>
                 </a>
                 <a href="https://linkedin.com/in/arjunvc" target="_blank">
-                    <img src="../assets/icons/linkedin.svg" alt="linkedin" />
+                    <i data-feather="linkedin"></i>
                 </a>
             </div>
         </nav>
@@ -307,19 +308,19 @@
                 <h4>Badge on Icons</h4>
                 <div class="flex-row flex-base">
                     <div class="badge-container">
-                        <img src="../assets/icons/cart.svg" alt="cart" class="icon">
+                        <i data-feather="shopping-cart" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/message.svg" alt="message" class="icon">
+                        <i data-feather="mail" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/phone.svg" alt="phone" class="icon">
+                        <i data-feather="instagram" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/calender.svg" alt="calender" class="icon">
+                        <i data-feather="bell" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9</span></div>
                     </div>
                 </div>
@@ -330,19 +331,19 @@
                     is wider than expected, they might lose the circular shape. </p>
                 <div class="flex-row flex-base">
                     <div class="badge-container">
-                        <img src="../assets/icons/cart.svg" alt="cart" class="icon">
+                        <i data-feather="shopping-cart" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/message.svg" alt="message" class="icon">
+                        <i data-feather="mail" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>99</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/phone.svg" alt="phone" class="icon">
+                        <i data-feather="instagram" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>999</span></div>
                     </div>
                     <div class="badge-container">
-                        <img src="../assets/icons/calender.svg" alt="calender" class="icon">
+                        <i data-feather="bell" class="icon"></i>
                         <div class="badge badge-round badge-lg"><span>9999</span></div>
                     </div>
                 </div>
@@ -376,13 +377,13 @@
                 <p>The Icon button can be used with both images as well as icons.</p>
                 <div class="flex-row flex-center">
                     <button class="btn btn-icon">
-                        <img src="../assets/icons/heart.svg" alt="heart" >
+                        <i data-feather="heart" class="icon"></i>
                     </button>  
                     <button class="btn btn-icon">
-                        <img src="../assets/icons/plus-solid.svg" alt="add" >
+                        <i data-feather="camera" class="icon"></i>
                     </button>
                     <button class="btn btn-icon">
-                        <img src="../assets/icons/delete.svg" alt="delete" >
+                        <i data-feather="trash" class="icon"></i>
                     </button>
                 </div>
                 <code>
@@ -418,7 +419,7 @@
                 <div class="flex-row flex-center">
                     <div class="card">
                         <button class="btn btn-icon">
-                            <img src="../assets/icons/heart.svg" alt="heart">
+                            <i data-feather="heart"></i>
                         </button>
                         <div class="card-cover">
                             <img src="../assets/images/product.jpg" alt="cover">
@@ -449,7 +450,7 @@
                     <div class="card card-badge">
                         <div class="badge badge-square">50% Off</div>
                         <button class="btn btn-icon">
-                            <img src="../assets/icons/heart.svg" alt="heart">
+                            <i data-feather="heart"></i>
                         </button>
                         <div class="card-cover">
                             <img src="../assets/images/product.jpg" alt="cover">
@@ -492,7 +493,7 @@
                     <button class="btn btn-secondary open-card">Open Card</button>
                     <div class="card card-dismiss">
                         <button class="btn btn-icon icon-dismiss">
-                            <img src="../assets/icons/menu-close.svg" alt="heart">
+                            <i data-feather="x"></i>
                         </button>
                         <div class="card-cover">
                             <img src="../assets/images/product.jpg" alt="cover">
@@ -522,7 +523,7 @@
                 <div class="flex-row flex-center">
                     <div class="card card-overlay">
                         <button class="btn btn-icon">
-                            <img src="../assets/icons/heart.svg" alt="heart">
+                            <i data-feather="heart"></i>
                         </button>
                         <div class="card-cover">
                             <div class="text-overlay">
@@ -553,7 +554,7 @@
                 <div class="flex-row flex-center">
                     <div class="card card-horizontal">
                         <button class="btn btn-icon">
-                            <img src="../assets/icons/heart.svg" alt="heart">
+                            <i data-feather="heart"></i>
                         </button>
                         <div class="card-cover">
                             <img src="../assets/images/product.jpg" alt="cover">
@@ -677,7 +678,6 @@
                 <div class="flex-col flex-center">
                     <button class="btn btn-secondary btn-open-modal">Open Modal</button>
                     <div class="modal close-modal">
-                        <img class="btn-close-modal" src="../assets/icons/menu-close.svg" alt="close">
                         <h5>Modal Title</h5>
                         <p>Modal body goes here.</p>
                         <div class="btn-container">
@@ -697,19 +697,22 @@
                 <div class="flex-row flex-center">
                     <div class="nav">
                         <button class="btn btn-icon open-menu">
-                            <img src="../assets/icons/menu-open.svg" alt="open menu">
+                            <i data-feather="menu"></i>
                         </button>
                         <h1 class="logo">Logo</h1>
                         <div class="search">
                             <input class="input" type="text" placeholder="Search...">
-                            <img src="../assets/icons/search.svg" alt="">
+                            <button><i data-feather="search"></i></button>
                         </div>
                         <div class="flex-row">
                             <button class="btn btn-icon">
-                                <img src="../assets/icons/heart.svg" alt="heart">
+                                <i data-feather="heart"></i>
                             </button>
                             <button class="btn btn-icon">
-                                <img src="../assets/icons/cart.svg" alt="cart">
+                                <i data-feather="shopping-cart"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i data-feather="settings"></i>
                             </button>
                         </div>
                     </div>
@@ -832,5 +835,8 @@
             </section>
         </main>
     </div>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
