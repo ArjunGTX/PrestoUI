@@ -1,5 +1,5 @@
 .container {
-  margin-top: 5rem;
+  margin-top: 10rem;
   height: 100vh;
   display: flex;
 }
@@ -66,12 +66,12 @@ main h2 {
 .btn-top {
   position: fixed;
   background-color: var(--docs-primary-100);
-  padding: var(--spacing-md);
-  border-radius: 2.5rem 2.5rem 1rem 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   color: var(--docs-font-10);
-  font-weight: 700;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 550;
 }
 nav .icons-container {

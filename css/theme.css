@@ -1,0 +1,85 @@
+:root {
+  --docs-primary-150: hsla(341, 73%, 35%, 1);
+  --docs-primary-100: hsla(341, 73%, 43%, 1);
+  --docs-primary-70: hsla(341, 70%, 60%, 1);
+  --docs-primary-50: hsla(341, 80%, 75%, 0.7);
+  --docs-font-100: hsla(0, 0%, 0%, 1);
+  --docs-font-90: hsla(0, 0%, 20%, 1);
+  --docs-font-70: hsla(0, 0%, 25%, 1);
+  --docs-font-50: hsla(0, 0%, 30%, 1);
+  --docs-font-10: hsla(100, 90%, 100%, 1);
+  --bg-docs-primary: hsla(100, 90%, 100%, 1);
+  --docs-primary-hover: rgba(210, 210, 210, 0.208);
+  --docs-shadow-white: 0px 0px 10px 2px #e7e3e35b;
+  --bg-toggle: rgba(116, 116, 116, 0.34);
+}
+.dark-mode {
+  --docs-primary-150: hsl(40, 97%, 64%);
+  --docs-primary-100: hsl(40, 100%, 67%);
+  --docs-primary-70: hsl(40, 96%, 72%);
+  --docs-primary-50: hsl(40, 100%, 75%);
+  --docs-font-10: hsl(0, 0%, 16%);
+  --docs-font-50: hsl(0, 0%, 28%);
+  --docs-font-70: hsl(0, 0%, 76%);
+  --docs-font-90: hsl(0, 5%, 96%);
+  --docs-font-100: hsla(100, 90%, 100%, 1);
+  --bg-docs-primary: #14213d;
+  --docs-primary-hover: hsla(40, 100%, 75%, 0.2);
+  --docs-shadow-white: 0px 0px 10px 2px #3838382e;
+  --bg-toggle: #000000;
+}
+* {
+  transition: background-color 300ms, color 250ms;
+}
+body {
+  background-color: var(--bg-docs-primary);
+  color: var(--docs-font-100);
+}
+header {
+  background-color: var(--bg-docs-primary);
+  box-shadow: var(--docs-shadow-white);
+}
+.btn-toggle-theme {
+  cursor: pointer;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 600;
+  overflow: hidden;
+}
+.btn-toggle-theme input {
+  opacity: 0;
+  position: absolute;
+}
+.btn-toggle-theme label {
+  background-color: var(--bg-toggle);
+  width: 3.6rem;
+  height: 1.8rem;
+  border-radius: 50rem;
+  padding: 2px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-toggle-theme img {
+  width: 1.45rem;
+  height: 1.45rem;
+  display: block;
+  padding: 2px;
+}
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(5%, -50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--docs-font-100);
+  border-radius: 50%;
+  transition: 300ms;
+}
+.thumb.right {
+  transform: translate(100%, -50%);
+}

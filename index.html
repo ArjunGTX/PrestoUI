@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/components/button.css" />
-    <link rel="stylesheet" href="./css/darkmode.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./scripts/theme.js" defer></script>
   </head>
-  <body class="dark-mode">
+  <body>
     <header class="flex-row col-center">
       <div class="logo flex-row flex-center">
         <a href="/index.html" class="flex-row">
@@ -62,6 +63,14 @@
         </a>
       </div>
     </footer>
+    <button class="btn-toggle-theme">
+      <label for="theme">
+        <input type="checkbox" id="theme" />
+        <img src="./assets/icons/moon.png" alt="moon" />
+        <img src="./assets/icons/sun.png" alt="sun" />
+        <div class="thumb"></div>
+      </label>
+    </button>
     <script>
       feather.replace();
     </script>

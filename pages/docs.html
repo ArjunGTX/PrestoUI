@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/docs.css" />
     <link rel="stylesheet" href="../css/components/index.css" />
-    <link rel="stylesheet" href="../css/darkmode.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="../scripts/nav.js" defer></script>
     <script src="../scripts/card.js" defer></script>
     <script src="../scripts/snackbar.js" defer></script>
     <script src="../scripts/rating.js" defer></script>
     <script src="../scripts/modal.js" defer></script>
+    <script src="../scripts/theme.js" defer></script>
 </head>
 
-<body class="dark-mode">
+<body>
     <header class="flex-row col-center">
         <i data-feather="menu" class="menu-icon menu-open"></i>
         <div class="logo flex-row flex-center">
@@ -79,7 +80,17 @@
         </nav>
 
         <main>
-           <a href="#installation" class="btn-top">Top</a>
+           <a href="#installation" class="btn-top flex-row flex-center">
+            <i data-feather="arrow-up-circle"></i>
+           </a>
+           <button class="btn-toggle-theme">
+            <label for="theme">
+              <input type="checkbox" id="theme" />
+              <img src="../assets/icons/moon.png" alt="moon" />
+              <img src="../assets/icons/sun.png" alt="sun" />
+              <div class="thumb"></div>
+            </label>
+          </button>
             <h2 id="getting-started">Getting Started</h2>
             <section>
                 <h3 class="section-head" id="installation">Installation</h3>
