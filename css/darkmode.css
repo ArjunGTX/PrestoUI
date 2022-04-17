@@ -22,9 +22,9 @@
     --docs-font-70: hsl(0, 0%, 76%);
     --docs-font-90: hsl(0, 5%, 96%);
     --docs-font-100: hsla(100, 90%, 100%, 1);
-    --bg-docs-primary: hsl(201, 100%, 14%);
+    --bg-docs-primary: #14213d;
     --docs-primary-hover: hsla(40, 100%, 75%, 0.2);
-    --docs-shadow-white: 0px 0px 10px 2px #38383876;
+    --docs-shadow-white: 0px 0px 10px 2px #3838382e;
   }
   * {
     transition: background-color 350ms, color 350ms;
