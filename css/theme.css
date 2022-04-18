@@ -76,7 +76,7 @@ header {
   transform: translate(5%, -50%);
   width: 1.7rem;
   height: 1.7rem;
-  background-color: var(--docs-font-100);
+  background-color: var(--docs-primary-100);
   border-radius: 50%;
   transition: 300ms;
 }

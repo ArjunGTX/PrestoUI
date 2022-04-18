@@ -277,7 +277,7 @@ section .hyper-link {
   header {
     justify-content: flex-start;
     padding-left: 15rem;
-   }
+  }
   header .btn {
     display: block;
   }
