@@ -48,6 +48,7 @@ header {
   right: 1.5rem;
   z-index: 600;
   overflow: hidden;
+  background-color: transparent;
 }
 .btn-toggle-theme input {
   opacity: 0;
