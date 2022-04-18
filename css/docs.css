@@ -81,7 +81,7 @@ header .btn {
   display: none;
 }
 section {
-  border-top: 3px solid var(--border-white);
+  border-top: 3px solid var(--docs-border-white);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -230,6 +230,7 @@ section .hyper-link {
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--bg-docs-primary);
@@ -289,7 +290,7 @@ section .hyper-link {
     padding: 3rem 1rem 1rem 3rem;
     font-size: 1.2rem;
     box-shadow: none;
-    border-right: 2px solid var(--border-white);
+    border-right: 2px solid var(--docs-border-white);
   }
   nav h3 {
     font-size: 1.3rem;

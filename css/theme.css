@@ -1,31 +1,33 @@
 :root {
-  --docs-primary-150: hsla(341, 73%, 35%, 1);
-  --docs-primary-100: hsla(341, 73%, 43%, 1);
-  --docs-primary-70: hsla(341, 70%, 60%, 1);
-  --docs-primary-50: hsla(341, 80%, 75%, 0.7);
-  --docs-font-100: hsla(0, 0%, 0%, 1);
-  --docs-font-90: hsla(0, 0%, 20%, 1);
-  --docs-font-70: hsla(0, 0%, 25%, 1);
-  --docs-font-50: hsla(0, 0%, 30%, 1);
-  --docs-font-10: hsla(100, 90%, 100%, 1);
-  --bg-docs-primary: hsla(100, 90%, 100%, 1);
-  --docs-primary-hover: rgba(210, 210, 210, 0.208);
+  --docs-primary-150: #9a1841;
+  --docs-primary-100: #be1e50;
+  --docs-primary-70: #e0527f;
+  --docs-primary-50: #f28cada0;
+  --docs-font-100: #000000;
+  --docs-font-90: #333333;
+  --docs-font-70: #404040;
+  --docs-font-50: #4d4d4d;
+  --docs-font-10: #ffffff;
+  --bg-docs-primary: #ffffff;
+  --docs-primary-hover: #ffffff40;
   --docs-shadow-white: 0px 0px 10px 2px #e7e3e35b;
-  --bg-toggle: rgba(116, 116, 116, 0.34);
+  --docs-border-white: #0f0f0f50;
+  --bg-toggle: #74747445;
 }
 .dark-mode {
-  --docs-primary-150: hsl(40, 97%, 64%);
-  --docs-primary-100: hsl(40, 100%, 67%);
-  --docs-primary-70: hsl(40, 96%, 72%);
-  --docs-primary-50: hsl(40, 100%, 75%);
-  --docs-font-10: hsl(0, 0%, 16%);
-  --docs-font-50: hsl(0, 0%, 28%);
-  --docs-font-70: hsl(0, 0%, 76%);
-  --docs-font-90: hsl(0, 5%, 96%);
-  --docs-font-100: hsla(100, 90%, 100%, 1);
+  --docs-primary-150: #fcc14a;
+  --docs-primary-100: #ffc757;
+  --docs-primary-70: #fcce73;
+  --docs-primary-50: #ffd480;
+  --docs-font-10: #292929;
+  --docs-font-50: #474747;
+  --docs-font-70: #c2c2c2;
+  --docs-font-90: #f5f4f4;
+  --docs-font-100: #ffffff;
   --bg-docs-primary: #14213d;
-  --docs-primary-hover: hsla(40, 100%, 75%, 0.2);
+  --docs-primary-hover: #ffd48040;
   --docs-shadow-white: 0px 0px 10px 2px #3838382e;
+  --docs-border-white: #efefef50;
   --bg-toggle: #000000;
 }
 * {
