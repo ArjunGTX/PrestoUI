@@ -11,6 +11,7 @@ A lightweight component library that fastens the development of a UI. Presto com
 - Consistency in colours, naming, and typography
 - Lightweight
 - Customizable 
+- Dark mode Toggle
 
 
 #### Installation
@@ -38,6 +39,8 @@ Replace `<component-name>` with the desired component. List of available compone
 - snackbar
 - rating
 - modal
+- Grid
+- Notification
 
 #### Tech Stack
 
