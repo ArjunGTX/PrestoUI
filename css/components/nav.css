@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--bg-primary);
 }
 .nav .logo {
     font-size: 1.3rem;
@@ -17,23 +18,18 @@
 .nav .search {
     display: none;
 }
-.nav .btn-icon img {
-    margin: 0;
-    max-width: 25px;
-    max-height: 25px;
-}
 
 @media screen and (min-width: 840px) {
     .nav .search {
         display: block;
         position: relative;
+        color: var(--font-100);
     }
     .open-menu {
         display: none;
     }
-    .search img {
+    .search button {
         position: absolute;
-        width: 20px;
         top: 50%;
         transform: translateY(-50%);
         right: 1rem;

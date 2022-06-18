@@ -1,5 +1,5 @@
 .container {
-  margin-top: 5rem;
+  margin-top: 10rem;
   height: 100vh;
   display: flex;
 }
@@ -8,9 +8,9 @@ nav {
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 20;
-  background-color: var(--bg-primary);
-  box-shadow: var(--shadow-white);
+  z-index: 600;
+  background-color: var(--bg-docs-primary);
+  box-shadow: var(--docs-shadow-white);
   padding-left: 1.5rem;
   transform: translateX(-100%);
   transition: transform 300ms;
@@ -20,19 +20,20 @@ nav {
   transform: translateX(0);
   pointer-events: all;
 }
-nav .menu-icon {
-  width: 1.8rem;
-  margin: 1.5rem 1.5rem 0.625rem auto;
+nav .menu-close {
+  margin: var(--spacing-lg);
+  margin-left: auto;
+  color: var(--docs-font-70);
 }
 nav h3 {
-  color: var(--font-70);
+  color: var(--docs-font-90);
   font-size: 1.15rem;
 }
 nav ul {
   padding: 5px 1rem;
 }
 .nav-link {
-  color: var(--font-50);
+  color: var(--docs-font-70);
   display: inline-block;
   padding: 0.5rem 0.625rem;
   margin: 5px 0;
@@ -41,12 +42,12 @@ nav ul {
 }
 
 .nav-link:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--docs-primary-hover);
   transition: 300ms;
-  color: var(--primary-100);
+  color: var(--docs-primary-100);
 }
 .nav-link-active {
-  color: var(--primary-100);
+  color: var(--docs-primary-100);
   font-weight: 800;
 }
 .blur-body {
@@ -64,13 +65,13 @@ main h2 {
 }
 .btn-top {
   position: fixed;
-  background-color: var(--primary-100);
-  padding: var(--spacing-md);
-  border-radius: 2.5rem 2.5rem 1rem 1rem;
-  color: var(--font-10);
-  font-weight: 700;
-  bottom: 2rem;
-  right: 2rem;
+  background-color: var(--docs-primary-100);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--docs-font-10);
+  bottom: 1rem;
+  right: 1rem;
   z-index: 550;
 }
 nav .icons-container {
@@ -80,7 +81,7 @@ header .btn {
   display: none;
 }
 section {
-  border-top: 3px solid var(--border-white);
+  border-top: 3px solid var(--docs-border-white);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -94,13 +95,13 @@ section h3 {
   position: absolute;
   top: -1.3rem;
   left: 2rem;
-  background-color: var(--bg-primary);
-  color: var(--font-90);
+  background-color: var(--bg-docs-primary);
+  color: var(--docs-font-90);
   padding: 0 5px;
   font-size: 1.6rem;
 }
 section p {
-  color: var(--font-70);
+  color: var(--docs-font-70);
   max-width: 85ch;
   margin: 0.625rem 0;
 }
@@ -108,12 +109,13 @@ section p .snippet {
   padding: 0 5px;
   background-color: #e4e4e4;
   border-radius: 3px;
+  color: var(--docs-font-50);
   font-family: "Courier New", Courier, monospace;
 }
 section h4 {
   margin: 1rem 0.625rem 0.625rem 0;
   font-size: 1.2rem;
-  color: var(--font-70);
+  color: var(--docs-font-70);
 }
 section ul {
   list-style-type: disc;
@@ -124,19 +126,23 @@ section .avatar {
 }
 section .grid {
   height: 5rem;
-  border: 1px solid var(--font-100);
-  background-color: var(--primary-70);
+  border: 1px solid var(--docs-font-100);
+  background-color: var(--docs-primary-70);
 }
 section .grid > div {
-  border: 1px solid var(--font-100);
+  border: 1px solid var(--docs-font-100);
   text-align: center;
 }
 code {
-  width: 100%;
+  width: 10rem;
+  margin: 0 auto;
+}
+.icon {
+  color: var(--docs-font-100);
 }
 .badge-container .icon {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2rem;
+  height: 2rem;
 }
 .badge-container {
   margin: 1rem 1.5rem;
@@ -154,7 +160,7 @@ span.badge-container:nth-of-type(3) {
   height: 15rem;
   width: 8rem;
   border-radius: 1rem;
-  background-color: var(--font-50);
+  background-color: var(--docs-font-50);
   position: relative;
 }
 .image-container {
@@ -165,8 +171,9 @@ span.badge-container:nth-of-type(3) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
   width: 90%;
+  color: var(--font-100);
   min-height: 8rem;
-  box-shadow: var(--shadow-white);
+  box-shadow: var(--docs-shadow-white);
 }
 .color-palette .primary-dark {
   background-color: var(--primary-150);
@@ -179,6 +186,7 @@ span.badge-container:nth-of-type(3) {
 }
 .color-palette .primary-hover {
   background-color: var(--primary-hover);
+  color: var(--font-50);
 }
 .color-palette .font-dark {
   background-color: var(--font-100);
@@ -208,7 +216,7 @@ span.badge-container:nth-of-type(3) {
   background-color: var(--bg-info);
 }
 section .hyper-link {
-  color: var(--font-90);
+  color: var(--docs-font-70);
   text-decoration: underline;
 }
 .snackbar-container,
@@ -216,23 +224,24 @@ section .hyper-link {
   width: 90%;
   height: 15rem;
   margin: var(--spacing-lg);
-  border: 2px solid var(--font-50);
+  border: 2px solid var(--docs-font-50);
   overflow: hidden;
   position: relative;
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-docs-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary-70);
+  background-color: var(--docs-primary-70);
   border-radius: 30px;
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-70) var(--bg-primary);
+  scrollbar-color: var(--docs-primary-70) var(--bg-docs-primary);
 }
 .my-md {
   margin-top: var(--spacing-md);
@@ -242,7 +251,20 @@ section .hyper-link {
   margin-left: var(--spacing-md);
   margin-right: var(--spacing-md);
 }
+@media screen and (min-width: 360px) {
+  code {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 420px) {
+  code {
+    width: 20rem;
+  }
+}
 @media screen and (min-width: 684px) {
+  code {
+    width: 25rem;
+  }
   .image-container {
     width: 15rem;
     height: 15rem;
@@ -250,6 +272,13 @@ section .hyper-link {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    margin-top: 8rem;
+  }
+  header {
+    justify-content: flex-start;
+    padding-left: 15rem;
+  }
   header .btn {
     display: block;
   }
@@ -257,20 +286,17 @@ section .hyper-link {
     width: 250px;
     transform: translateX(0%);
     z-index: 0;
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding: 3rem 1rem 1rem 3rem;
     font-size: 1.2rem;
     box-shadow: none;
-    border-right: 2px solid var(--border-white);
+    border-right: 2px solid var(--docs-border-white);
   }
   nav h3 {
     font-size: 1.3rem;
   }
   main {
     margin-left: 250px;
-  }
-  nav .icons-container img {
-    width: 1.8rem;
   }
   section h3 {
     font-size: 1.8rem;
@@ -280,12 +306,15 @@ section .hyper-link {
     height: 15rem;
     width: 12rem;
     border-radius: 1rem;
-    background-color: var(--font-50);
+    background-color: var(--docs-font-50);
     position: relative;
   }
   .image-container {
     width: 18rem;
     height: 18rem;
+  }
+  code {
+    width: 24rem;
   }
 }
 
@@ -296,9 +325,6 @@ section .hyper-link {
   }
   main {
     margin-left: 350px;
-  }
-  nav .icons-container img {
-    width: 2.2rem;
   }
   section {
     margin: 3rem;
@@ -314,11 +340,23 @@ section .hyper-link {
     width: 21rem;
     height: 21rem;
   }
+  code {
+    width: 22rem;
+  }
 }
 
 @media screen and (min-width: 940px) {
   .image-container {
     width: 26rem;
     height: 26rem;
+  }
+  code {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  code {
+    width: 100%;
   }
 }

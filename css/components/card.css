@@ -70,6 +70,7 @@
     padding: 0;
     margin: 0 0 5px 0;
     font-size: 1rem;
+    color: var(--font-100);
 }
 .card-subtitle {
     padding: 0;
@@ -82,6 +83,7 @@
     font-size: 1rem;
     font-weight: 600;
     margin-top: 5px;
+    color: var(--font-100);
 }
 .card .rating {
     margin-top: 5px;
@@ -128,6 +130,9 @@
     display: flex;
     align-items: flex-end;
     transition: 150ms;
+}
+.text-overlay h5, .text-overlay .card-price {
+    color: var(--font-10);
 }
 .text-overlay:hover {
     background-color: var(--primary-hover);

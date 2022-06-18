@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: var(--font-100);
   padding: var(--spacing-sm);
   background-color: var(--bg-primary);
   box-shadow: var(--shadow-white);
