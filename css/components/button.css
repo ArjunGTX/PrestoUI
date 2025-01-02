@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+
+.btn {
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+    background-color: inherit;
+    padding: 0.375rem 0.875rem;
+    border-radius: 3px;
+    margin: 1rem;
+}
+.btn-primary {
+    min-width: 7.5rem;
+    text-align: center;
+    background-color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+    color: var(--font-10);
+}
+.btn-primary:hover {
+    background-color: var(--primary-150);
+}
+.btn-secondary {
+    padding: 0.375rem 0.875rem;
+    border-radius: 3px;
+    min-width: 7.5rem;
+    text-align: center;
+    border: 2px solid var(--primary-100);
+    color: var(--primary-100);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-100);
+    color: var(--font-10);
+}
+.btn-link {
+    font-size: 1rem;
+    color: var(--primary-100);
+}
+.btn-link:hover {
+    background-color: var(--primary-hover);
+}
+.btn-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-100);
+    padding: .5rem;
+    border-radius: 50%;
+}
+.btn-icon img, .btn-icon i {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn-icon:hover {
+    background-color: var(--primary-hover);
+}
+.btn-success {
+    background-color: var(--bg-success);
+    color: var(--font-success);
+}
+.btn-success:hover {
+    background-color: var(--bg-success-hover);
+}
+.btn-warning {
+    background-color: var(--bg-warning);
+    color: var(--font-warning);
+}
+.btn-warning:hover {
+    background-color: var(--bg-warning-hover);
+}
+.btn-error {
+    background-color: var(--bg-error);
+    color: var(--font-error);
+}
+.btn-error:hover {
+    background-color: var(--bg-error-hover);
+}
+.btn-info {
+    background-color: var(--bg-info);
+    color: var(--font-info);
+}
+.btn-info:hover {
+    background-color: var(--bg-info-hover);
+}
+.btn-float {
+    background-color: var(--primary-100);
+    color: var(--font-10);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.btn-float:hover {
+    background-color: var(--primary-150);
+}
+
+@media screen and (min-width: 640px) {
+    .btn {
+        font-size: 1.2rem;
+    }
+}

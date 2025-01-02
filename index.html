@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrestoUI</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" href="./css/resets.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/components/button.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./scripts/theme.js" defer></script>
+  </head>
+  <body>
+    <header class="flex-row col-center">
+      <div class="logo flex-row flex-center">
+        <a href="/index.html" class="flex-row">
+          <h1 class="logo-txt">PrestoUI</h1>
+        </a>
+      </div>
+      <div class="icons-container">
+        <a href="https://twitter.com/im_arjunvc" target="_blank">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="https://github.com/ArjunGTX" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/arjunvc" target="_blank">
+          <i data-feather="linkedin"></i>
+        </a>
+      </div>
+    </header>
+    <main class="flex-col flex-center">
+      <h2>Faster and Lighter, Presto it is!</h2>
+      <p>
+        Build a Clean, Consistent and Responsive UI for your Website. Presto
+        brings in a handful of Custom, Tailor fit components that blends in
+        smoothly with any theme. Integrate <b>PrestoUI</b> and feel the magic!
+      </p>
+      <div class="flex-row flex-center">
+        <a href="./pages/docs.html">
+          <button class="btn btn-primary">Get Started</button>
+        </a>
+        <a href="https://github.com/ArjunGTX/PrestoUI" target="_blank">
+          <button class="btn btn-secondary">Github</button>
+        </a>
+      </div>
+    </main>
+    <footer class="flex-row flex-center footer-fixed">
+      <div class="icons-container">
+        <a href="https://twitter.com/im_arjunvc" target="_blank">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="https://github.com/ArjunGTX" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/arjunvc" target="_blank">
+          <i data-feather="linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <button class="btn-toggle-theme">
+      <label for="theme">
+        <input type="checkbox" id="theme" />
+        <img src="./assets/icons/moon.png" alt="moon" />
+        <img src="./assets/icons/sun.png" alt="sun" />
+        <div class="thumb"></div>
+      </label>
+    </button>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

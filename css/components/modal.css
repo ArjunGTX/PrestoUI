@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+@import url("./button.css");
+
+.modal {
+    width: clamp(20rem, 25rem, 70%);
+    max-height: 12rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-white);
+    background-color: var(--bg-primary);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 5px;
+    overflow-y: auto;
+    transition: 250ms;
+    z-index: 500;
+}
+.modal h5 {
+    margin: var(--spacing-md);
+    font-size: 1.3rem;
+    color: var(--font-100);
+}
+.modal p {
+    margin: var(--spacing-md);
+    color: var(--font-70);
+}
+.modal .btn-container {
+    margin-left: auto;
+}
+.modal .btn {
+    min-width: fit-content;
+}
+.open-modal {
+    transform: translate(-50%, -50%) scale(1);
+}
+.close-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@media screen and (min-width: 780px) {
+    .modal {
+        max-width: 14rem;
+    }
+}
+@media screen and (min-width: 890px) {
+    .modal {
+        max-width: 25rem;
+    }
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("../utility.css");
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.spaced-list > * {
+  list-style: none;
+  margin: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: 5px;
+}
+.spaced-list > *:hover {
+  background-color: var(--hover-light);
+  transition: background-color 200ms;
+}
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notification-list > * {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--font-100);
+  padding: var(--spacing-sm);
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-white);
+  margin: var(--spacing-sm);
+  width: clamp(20rem, 25rem, 90%);
+  border-radius: 5px;
+}
+.notification-list > *:hover {
+  background-color: var(--hover-light);
+  transition: background-color 200ms;
+}

@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+}
+.rating img,
+.rating i {
+    width: 2.25rem;
+    margin: var(--spacing-sm);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 684px) {
+    .rating img,
+    .rating i {
+        width: 2.5rem;
+    }
+}

@@ -1,0 +1,57 @@
+main {
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+main h2 {
+  font-size: 1.8rem;
+  max-width: 65ch;
+}
+main p {
+  margin: 1rem 0 3rem 0;
+  font-size: 1rem;
+  color: var(--docs-font-70);
+  max-width: 65ch;
+}
+main .btn {
+  margin: 0.5rem;
+}
+main .btn-primary {
+  background-color: var(--docs-primary-100);
+  border: 2px solid var(--docs-primary-100);
+  color: var(--docs-font-10);
+}
+main .btn-primary:hover {
+  background-color: var(--docs-primary-150);
+}
+main .btn-secondary {
+  border: 2px solid var(--docs-primary-100);
+  color: var(--docs-primary-100);
+}
+main .btn-secondary:hover {
+  background-color: var(--docs-primary-100);
+  color: var(--docs-font-10);
+}
+.footer-fixed {
+  background-color: var(--bg-docs-primary) !important;
+}
+
+@media screen and (min-width: 640px) {
+  main h2 {
+    font-size: 2.2rem;
+  }
+  main p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main h2 {
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1.3rem;
+  }
+  .footer-fixed {
+    display: none !important;
+  }
+}
