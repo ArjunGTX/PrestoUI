@@ -3,18 +3,18 @@
 
 A lightweight component library that fastens the development of a UI. Presto components are  built using raw css.
 
-#### Features
+## Features
 
 - Responsive components
 - Support for individual components
 - Comprehensive documentation
-- Consistency in colours, naming, and typography
+- Consistency in colors, naming, and typography
 - Lightweight
 - Customizable 
 - Dark mode Toggle
 
 
-#### Installation
+## Installation
 To install Presto in your project just link the stylesheet inside the `head` tag of your HTML file:
 ```
 <link rel="stylesheet" href="https://prestoui.netlify.app/css/components/index.css" />
@@ -42,19 +42,16 @@ Replace `<component-name>` with the desired component. List of available compone
 - Grid
 - Notification
 
-#### Tech Stack
+## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
 
-#### Demo
+## Demo
 - Desktop View
 ![Desktop](https://github.com/ArjunGTX/PrestoUI/blob/development/screenshots/demo-desktop.gif)
 - Mobile View
 ![Mobile](https://github.com/ArjunGTX/PrestoUI/blob/development/screenshots/demo-mobile.gif)
-
-#### Feedback
-Feel free to raise an Issue if you find any, or  mail them to [arjunatpavilion@gmail.com](mailto:arjunatpavilion@gmail.com)
 
 
