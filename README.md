@@ -17,7 +17,7 @@ A lightweight component library that fastens the development of a UI. Presto com
 ## Installation
 To install Presto in your project just link the stylesheet inside the `head` tag of your HTML file:
 ```
-<link rel="stylesheet" href="https://prestoui.netlify.app/css/components/index.css" />
+<link rel="stylesheet" href="https://prestoui.iambatman.dev/css/components/index.css" />
 ```
 Or import it inside the CSS file:
 ```
@@ -25,7 +25,7 @@ Or import it inside the CSS file:
 ```
 To install only a particular component use the following code:
 ```
-<link rel="stylesheet" href="https://prestoui.netlify.app/css/components/<component-name>.css" />
+<link rel="stylesheet" href="https://prestoui.iambatman.dev/css/components/<component-name>.css" />
 ```
 Replace `<component-name>` with the desired component. List of available components are:
 
